@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Login Page</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"></script>
+    <style>
+      
+      #login{
+        width: 100%;
+        
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: #4a90e2;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+      #emailHelp{
+        text-align: right;
+        margin-bottom: 50px;
+      }
+      #otp{
+        text-align: center;
+        color: #4a90e2;
+      }
+      a{
+        text-decoration: none;
+
+      }
+      #offcanvasRight{
+        width: 472px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      #or{
+        
+        text-align: center;
+        color:#9d9fa0 ;
+      }
+      #GoogleSignIn{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px 10px 25px;
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+      }
+      #icon{
+        font-size: 28px;
+        color: #4a90e2;
+      }
+      #passwardCheck{
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid #4a90e2;
+      }
+     
+      
+    </style>
+    
+  </head>
+  <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous">
+</script>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+ data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login Here</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Login</h5>
+    <p><a  target ="_blank" href="Register.html">Register for free</a></p>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   
+  
+  <form method="POST" action="index.php">
+
+  <div class="mb-3">
+    <label class="form-label">Email ID</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" required>
+    <div class="form-text text-end">Forgot Password?</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100" id="login">
+    Login
+  </button>
+
+</form>
+
+
+      <p id="otp">Use OTP to login</p>
+      <hr>
+      <p id="or">or</p>
+        <div id="GoogleSignIn">
+          <i class="fa-brands fa-google" id="icon"></i>
+          <a target="_blank"  href="https://account.google.com/" >Sign in with Google</a>
+        </div>
+  </div>
+</div>
+  </body>
+</html> 
+
